@@ -38,6 +38,8 @@ form.addEventListener("submit", function(event){
     let cargoMassInfo = document.querySelector("input[name=cargoMass]");
     let cargoLevel = cargoMassInfo.value;
 
+    
+
 
     formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel);
 });

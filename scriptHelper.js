@@ -50,28 +50,28 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
    else {
     list.style.visability = "visible";
     pilotInput.innerHTML = `Pilot ${pilot} is ready for launch`
-    copilotInput.innerHTML = ` Co-pilot ${copilot} is ready for launch`
+    copilotInput.innerHTML = `Co-pilot ${copilot} is ready for launch`
     let launchStatus = document.getElementById("launchStatus");
     //check fuel levels and update faulty items
     if(fuelLevel < 10000 && cargoLevel <= 10000){
         fuelLevelInput.innerHTML = 'Fuel level too low for launch';
         cargoLevelInput.innerHTML = 'Cargo mass low enough for launch';
-        launchStatus.innerHTML = 'Shuttle Not Ready for Launch';
+        launchStatus.innerHTML = 'shuttle Not Ready for Launch';
         launchStatus.style.color = '#C7254E'; //red
     } else if(fuelLevel >= 10000 && cargoLevel > 10000){
         fuelLevelInput.innerHTML = 'Fuel level high enough for launch';
         cargoLevelInput.innerHTML = 'Cargo mass too heavy for launch';
-        launchStatus.innerHTML = 'Shuttle Not Ready for Launch';
+        launchStatus.innerHTML = 'shuttle Not Ready for Launch';
         launchStatus.style.color = '#C7254E'; //red
     } else if ( fuelLevel < 10000 && cargoLevel > 10000){
         fuelLevelInput.innerHTML = 'Fuel level too low for launch';
         cargoLevelInput.innerHTML = 'Cargo mass too heavy for launch';
-        launchStatus.innerHTML = 'Shuttle Not Ready for Launch';
+        launchStatus.innerHTML = 'shuttle Not Ready for Launch';
         launchStatus.style.color = '#C7254E'; //red
     } else {
         fuelLevelInput.innerHTML = 'Fuel level high enough for launch';
         cargoLevelInput.innerHTML = 'Cargo mass low enough for launch';
-        launchStatus.innerHTML = 'Shuttle Is Ready for Launch';
+        launchStatus.innerHTML = 'shuttle Is Ready for Launch';
         launchStatus.style.color = '#419F6A'; //green
     }
    }
