@@ -21,7 +21,7 @@ addDestinationInfo(document, planetPicked.name, planetPicked.diameter, planetPic
    
 let list = document.getElementById("faultyItems");
 
-list.style.visability = "hidden";
+list.style.visibility = "hidden";
 let form = this.document.querySelector("Form");
 
 form.addEventListener("submit", function(event){

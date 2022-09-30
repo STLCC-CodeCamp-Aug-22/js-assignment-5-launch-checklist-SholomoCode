@@ -48,7 +48,7 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
    }
    //update pilot/copilot status
    else {
-    list.style.visability = "visible";
+    list.style.visibility = "visible";
     pilotInput.innerHTML = `Pilot ${pilot} is ready for launch`
     copilotInput.innerHTML = `Co-pilot ${copilot} is ready for launch`
     let launchStatus = document.getElementById("launchStatus");
