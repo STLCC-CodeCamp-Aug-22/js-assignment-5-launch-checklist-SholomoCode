@@ -2,6 +2,7 @@
 
 const { myFetch, pickPlanet } = require("./scriptHelper");
 
+
 window.addEventListener("load", function() {
 
    let listedPlanets;
@@ -22,7 +23,7 @@ addDestinationInfo(document, planetPicked.name, planetPicked.diameter, planetPic
 let list = document.getElementById("faultyItems");
 
 list.style.visibility = "hidden";
-let form = this.document.querySelector("Form");
+let form = document.querySelector("Form");
 
 form.addEventListener("submit", function(event){
     event.preventDefault();
@@ -33,10 +34,10 @@ form.addEventListener("submit", function(event){
     let copilot = copilotInfo.value;
 
     let fuelLevelInfo = document.querySelector("input[name=fuelLevel]");
-    let fuelLevel = fuelLevelInfo.value;
+    let fuelLevel = Number(fuelLevelInfo.value);
 
     let cargoMassInfo = document.querySelector("input[name=cargoMass]");
-    let cargoLevel = cargoMassInfo.value;
+    let cargoLevel = Number(cargoMassInfo.value);
 
     
 

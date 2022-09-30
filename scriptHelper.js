@@ -9,10 +9,10 @@ function addDestinationInfo(document, name, diameter, star, distance, moons, ima
    missionTarget.innerHTML = `
                 <h2>Mission Destination</h2>
                 <ol>
-                    <li>Name: ${name} </li>
-                    <li>Diameter: ${diameter} </li>
+                    <li>Name: ${name}</li>
+                    <li>Diameter: ${diameter}</li>
                     <li>Star: ${star}</li>
-                    <li>Distance from Earth: ${distance} </li>
+                    <li>Distance from Earth: ${distance}</li>
                     <li>Number of Moons: ${moons}</li>
                 </ol>
                 <img src="${imageUrl}">`;
@@ -28,7 +28,7 @@ let numberInput = Number(testInput)
    }else if (isNaN(numberInput) === false){
     return "Is a Number";
    }
-};
+}
 function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
     //DOM elements
    let pilotInput = document.getElementById("pilotStatus");
