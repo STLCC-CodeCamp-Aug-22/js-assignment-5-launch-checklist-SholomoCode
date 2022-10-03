@@ -1,7 +1,7 @@
-const { queryAllByAttribute } = require('@testing-library/dom');
+
 
 // Write your helper functions here!
-require('isomorphic-fetch');
+//require('isomorphic-fetch');
 
 function addDestinationInfo(document, name, diameter, star, distance, moons, imageUrl) {
    // Here is the HTML formatting for our mission target div.
@@ -41,10 +41,10 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
    }
    //check that fuelLevel and cargoLevel are numbers and pilot and co-pilot are strings
    else if(validateInput(pilot) === "Is a Number" || validateInput(copilot) === "Is a Number"){
-    alart("Can't be a number");
+    alert("Can't be a number");
    }
    else if(validateInput(fuelLevel) === "Not a Number" || validateInput(cargoLevel) === "Not a Number"){
-    alart("Must be a number");
+    alert("Must be a number");
    }
    //update pilot/copilot status
    else {
@@ -95,8 +95,3 @@ function pickPlanet(planets) {
     return planets[randomPlanet];
 }
 
-module.exports.addDestinationInfo = addDestinationInfo;
-module.exports.validateInput = validateInput;
-module.exports.formSubmission = formSubmission;
-module.exports.pickPlanet = pickPlanet; 
-module.exports.myFetch = myFetch;
